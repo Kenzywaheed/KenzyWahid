@@ -1,0 +1,91 @@
+.animated-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+  background-color: var(--bg-color);
+}
+
+.parallax-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+  pointer-events: none;
+}
+
+.gradient-sphere {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.6;
+  animation: float 20s infinite ease-in-out alternate;
+}
+
+.sphere-1 {
+  width: 50vw;
+  height: 50vw;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.8) 0%, rgba(168, 85, 247, 0.4) 100%);
+  top: -10%;
+  left: -10%;
+  animation-delay: 0s;
+}
+
+.sphere-2 {
+  width: 40vw;
+  height: 40vw;
+  background: radial-gradient(circle, rgba(236, 72, 153, 0.8) 0%, rgba(244, 63, 94, 0.4) 100%);
+  bottom: -10%;
+  right: -5%;
+  animation-delay: -5s;
+}
+
+.sphere-3 {
+  width: 35vw;
+  height: 35vw;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.8) 0%, rgba(59, 130, 246, 0.4) 100%);
+  top: 40%;
+  left: 30%;
+  animation-delay: -10s;
+}
+
+.noise-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.04;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .gradient-sphere {
+    opacity: 0.4;
+  }
+  .noise-overlay {
+    opacity: 0.02;
+  }
+}
