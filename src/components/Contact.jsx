@@ -13,7 +13,7 @@ const Contact = () => {
           
           <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', background: 'var(--card-bg)', padding: '1rem 2rem', borderRadius: '50px', border: '1px solid var(--border-color)', boxShadow: 'var(--shadow-sm)' }}>
             <span style={{ fontWeight: 600, color: 'var(--text-secondary)' }}>Location:</span>
-            <span>Cairo, Egypt</span>
+            <span>Giza, Egypt</span>
           </div>
 
           <a href="https://wa.me/201001741891" target="_blank" rel="noopener noreferrer" className="hover-lift" style={{ display: 'flex', alignItems: 'center', gap: '1rem', background: 'var(--card-bg)', padding: '1rem 2rem', borderRadius: '50px', border: '1px solid var(--border-color)', boxShadow: 'var(--shadow-sm)', color: 'inherit' }}>
