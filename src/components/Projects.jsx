@@ -43,6 +43,13 @@ const Projects = () => {
       description: 'A collection of UI/UX design projects created in Figma, focusing on modern aesthetics, usability, and user-centered design principles',
       image: '/Ui .png',
       link: 'https://portfolio-beta-two-bhn516wk8n.vercel.app/'
+    },
+    {
+      id: 7,
+      title: 'StreamX',
+      description: 'StreamX \u2013 Movie Discovery Platform. A responsive movie streaming showcase that allows users to explore trending films',
+      image: '/project 5.png',
+      link: 'https://stream-x-blue.vercel.app/'
     }
   ];
 
