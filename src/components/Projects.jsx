@@ -50,13 +50,6 @@ const Projects = () => {
       description: 'StreamX \u2013 Movie Discovery Platform. A responsive movie streaming showcase that allows users to explore trending films',
       image: '/project 5.png',
       link: 'https://stream-x-blue.vercel.app/'
-    },
-    {
-      id: 8,
-      title: 'ICTHub',
-      description: 'Developed a production-ready website for ICTHub, implementing responsive layouts, reusable components, and a seamless user experience across devices.',
-      image: '/project 6.png',
-      link: 'https://final-icthub.vercel.app/'
     }
   ];
 
