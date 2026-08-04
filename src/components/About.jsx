@@ -12,6 +12,7 @@ const About = () => {
         <div className="mt-8">
           <h3>Frontend Skills</h3>
           <div className="tags-container">
+            <span className="tag">Next.js</span>
             <span className="tag">React</span>
             <span className="tag">JavaScript (ES6+)</span>
             <span className="tag">HTML5 & CSS3</span>
