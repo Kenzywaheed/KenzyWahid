@@ -281,6 +281,21 @@ nav {
   align-items: center;
 }
 
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
 .logo {
   font-weight: 700;
   font-size: 1.25rem;
@@ -289,7 +304,20 @@ nav {
 
 .nav-links {
   display: flex;
+  align-items: center;
   gap: 2rem;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 1rem;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
 }
 
 .nav-links a {
@@ -347,3 +375,73 @@ textarea.input-field {
 .gap-4 { gap: 1rem; }
 .mt-4 { margin-top: 1rem; }
 .mt-8 { margin-top: 2rem; }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-content {
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .nav-header {
+    width: 100%;
+  }
+
+  .mobile-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+    gap: 1.5rem;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+  
+  .social-links {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .section {
+    padding: 6rem 0;
+  }
+
+  .section h2 {
+    text-align: center;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .project-content {
+    text-align: center;
+  }
+
+  .container {
+    padding: 0 1.5rem;
+  }
+  
+  .btn-group {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .btn {
+    width: 100%;
+  }
+  
+  .contact-form {
+    padding: 0 1rem;
+    align-items: center;
+  }
+}
+

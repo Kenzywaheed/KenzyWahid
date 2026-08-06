@@ -5,8 +5,9 @@ const Hero = () => {
     <section id="home" className="section container flex-center text-center">
       <div className="fade-in">
         <div style={{
-          width: '480px',
-          height: '480px',
+          width: '100%',
+          maxWidth: '480px',
+          aspectRatio: '1 / 1',
           borderRadius: '24px',
           margin: '0 auto 2rem auto',
           boxShadow: 'var(--shadow-md)',
