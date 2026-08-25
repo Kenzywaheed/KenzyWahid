@@ -50,6 +50,13 @@ const Projects = () => {
       description: 'StreamX \u2013 Movie Discovery Platform. A responsive movie streaming showcase that allows users to explore trending films',
       image: '/project 5.png',
       link: 'https://stream-x-blue.vercel.app/'
+    },
+    {
+      id: 8,
+      title: 'MY DASH',
+      description: 'A simple and modern dashboard that showcases seamless data fetching and interactions through APIs, with a clean and responsive user experience.',
+      image: '/my dash.png',
+      link: 'https://my-dash-rust.vercel.app/'
     }
   ];
 
