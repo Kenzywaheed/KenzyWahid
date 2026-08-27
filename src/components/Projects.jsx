@@ -57,6 +57,13 @@ const Projects = () => {
       description: 'A simple and modern dashboard that showcases seamless data fetching and interactions through APIs, with a clean and responsive user experience.',
       image: '/my dash.png',
       link: 'https://my-dash-rust.vercel.app/'
+    },
+    {
+      id: 9,
+      title: 'BELLA',
+      description: 'A modern skincare experience crafted around beauty, self-care, and effortless elegance.',
+      image: '/project9.png',
+      link: 'https://bella-murex.vercel.app/'
     }
   ];
 
